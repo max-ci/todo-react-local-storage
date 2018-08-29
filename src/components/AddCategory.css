@@ -1,0 +1,69 @@
+.input-group {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  width: 100%;
+}
+.input-group>.custom-select:not(:last-child), .input-group>.form-control:not(:last-child) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.add-new-category > .form-control {
+  padding: 2rem;
+  color: rgba(255, 255, 255, 0.9);
+  border-radius: 0;
+  background-color: #212529;
+}
+.input-group>.custom-file, .input-group>.custom-select, .input-group>.form-control {
+  position: relative;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  width: 1%;
+  margin-bottom: 0;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  height: calc(2.25rem + 2px);
+  padding: 2rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: none;
+  border-radius: 0;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.add-new-category .input-group-append {
+  margin-left: 0;
+}
+.input-group-append, .input-group-prepend {
+  display: -ms-flexbox;
+  display: flex;
+}
+.input-group>.input-group-append>.btn, .input-group>.input-group-append>.input-group-text, .input-group>.input-group-prepend:first-child>.btn:not(:first-child), .input-group>.input-group-prepend:first-child>.input-group-text:not(:first-child), .input-group>.input-group-prepend:not(:first-child)>.btn, .input-group>.input-group-prepend:not(:first-child)>.input-group-text {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.add-new-category .input-group-text {
+  font-size: 1.5rem;
+  padding-right: 1.4rem;
+  padding-left: 1.4rem;
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  background-color: #ef8d63;
+  transition: 0.2s ease;
+}
+.add-new-category {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 300px;
+}

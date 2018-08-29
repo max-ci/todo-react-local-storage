@@ -1,0 +1,62 @@
+.sidebar-categories-title {
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 15px 0 15px 0;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.9);
+  background-color: #212529;
+}
+.sidebar-categories-empty {
+  padding: 2rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.3);
+}
+.sidebar-categories > li {
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+.sidebar-categories .btn-category {
+  padding: 0;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.9);
+  border: none;
+  background: none;
+  transition: 0.2s ease;
+}
+.sidebar-categories .btn-category-text {
+  max-width: 150px;
+  white-space: normal;
+  margin-right: auto;
+}
+.sidebar-categories .btn-category-remove,
+.sidebar-categories .btn-category-edit {
+  padding-right: 0.7rem;
+  border-radius: 0;
+}
+.sidebar-categories {
+  overflow-y: auto;
+  height: calc(100% - 149px);
+  margin: 0;
+  padding: 0;
+  padding-top: 1rem;
+  list-style: none;
+}
+.sidebar-categories .btn-category-remove,
+.sidebar-categories .btn-category-edit {
+  padding-right: 0.7rem;
+  border-radius: 0;
+}
+.sidebar-categories .btn-category-remove > i,
+.sidebar-categories .btn-category-edit > i {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.3);
+  transition: 0.2s ease;
+}
+.sidebar-categories .btn-category-remove > i {
+  position: relative;
+  top: 1px;
+  font-size: 0.9rem;
+}

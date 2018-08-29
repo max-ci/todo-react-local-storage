@@ -1,0 +1,30 @@
+.error {
+  position: fixed;
+  top: 0;
+  right: 0;
+  visibility: hidden;
+  width: 300px;
+  padding: 20px;
+  color: rgba(255, 255, 255, 0.9);
+  background-color: #e56565;
+  z-index: 3000;
+  opacity: 0.5;
+  transition: all 0.2s ease;
+}
+.error.active {
+  visibility: visible;
+  opacity: 1;
+}
+.error > button {
+  background: none;
+  border: none;
+  opacity: 0.5;
+  color: #fff;
+  font-size: 1rem;
+  position: absolute;
+  right: 15px;
+  top: 20px;
+  outline: 0;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
