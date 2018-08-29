@@ -11,10 +11,10 @@ class Sidebar extends Component {
   render() {
     return (
       <div>
-        <img src={logo} class="img-fluid mobile-logo d-lg-none" alt="Todo app" />
-        <button class="mobile-menu d-lg-none" type="button" onClick={this.onClick.bind(this)}>
-          <span class="mobile-menu-box">
-            <span class="mobile-menu-inner"></span>
+        <img src={logo} className="img-fluid mobile-logo d-lg-none" alt="Todo app" />
+        <button className="mobile-menu d-lg-none" type="button" onClick={this.onClick.bind(this)}>
+          <span className="mobile-menu-box">
+            <span className="mobile-menu-inner"></span>
           </span>
         </button>
       </div>
