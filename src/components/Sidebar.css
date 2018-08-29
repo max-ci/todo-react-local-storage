@@ -16,6 +16,9 @@
     transform: none;
   }
 }
+.sidebar.active {
+  transform: none;
+}
 .sidebar-logo-wrapper {
   height: 100px;
   display: flex;
