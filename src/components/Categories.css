@@ -24,7 +24,7 @@
   color: rgba(255, 255, 255, 0.9);
   border: none;
   background: none;
-  transition: 0.2s ease;
+  transition: none;
 }
 .sidebar-categories .btn-category-text {
   max-width: 150px;
@@ -59,4 +59,17 @@
   position: relative;
   top: 1px;
   font-size: 0.9rem;
+}
+.sidebar-categories .btn-category:focus {
+  box-shadow: none;
+}
+.sidebar-categories .btn-category:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+.sidebar-categories .btn-category-remove:hover > i,
+.sidebar-categories .btn-category-edit:hover > i {
+  color: rgba(255, 255, 255, 0.6);
+}
+.sidebar-categories > li.active > .btn-category-text {
+  color: #ef8d63;
 }

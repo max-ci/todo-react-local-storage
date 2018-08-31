@@ -9,7 +9,6 @@
   background-color: #e56565;
   z-index: 3000;
   opacity: 0.5;
-  transition: all 0.2s ease;
 }
 .error.active {
   visibility: visible;

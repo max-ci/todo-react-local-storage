@@ -59,11 +59,25 @@
   border: none;
   border-radius: 0;
   background-color: #ef8d63;
-  transition: 0.2s ease;
+  transition: none;
+}
+.add-new-category .input-group-text:hover {
+  background-color: #df835c;
 }
 .add-new-category {
   position: fixed;
   bottom: 0;
   left: 0;
   width: 300px;
+}
+@keyframes add-category-input {
+  0% {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  100% {
+    background: #212529;
+  }
+}
+.add-category-input-animation {
+  animation: add-category-input 1s;
 }

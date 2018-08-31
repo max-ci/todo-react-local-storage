@@ -11,25 +11,31 @@ class AddCategory extends Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
+  componentDidUpdate(prevProps) {
+    const { animate } = this.props
+    const { animate: wasComposing } = prevProps
+
+    if (!wasComposing && animate) {
+      this.refs.name.focus()
+    }
+  }
+
   handleSubmit(event) {
     event.preventDefault();
     if(this.refs.name.value === '') {
       this.props.showError('Category name can\'t be empty');
-    } else {
-      this.setState({
-        categoryName: this.refs.name.value
-      }, function() {
-        this.props.onAdd(this.state.categoryName);
-        this.refs.name.value = '';
-      });
+      return;
     }
+    this.props.onAdd(this.refs.name.value);
+    this.refs.name.value = '';
   }
 
   render() {
+    const animate = this.props.animate ? 'add-category-input-animation' : '';
     return(
       <form onSubmit={this.handleSubmit}>
         <div className="input-group add-new-category">
-          <input type="text" className="form-control" placeholder="New category..." ref="name" />
+          <input type="text" className={'form-control ' + animate} placeholder="New category..." ref="name"  />
           <div className="input-group-append">
             <button type="submit" className="input-group-text add-new-category-btn">+</button>
           </div>
